@@ -1,3 +1,69 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Invoice Generator</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <input type="text" class = "form-control" placeholder="Enter Company Name">
+      </div>
+  </div>
+    <br>
+  <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-3"></div>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <div class="form-group has-feedback">
+          <i class="glyphicon glyphicon-pencil form-control-feedback"></i><input type="number" class = "form-control" placeholder="Invoice Id"> 
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="billFrom">Bill From</label>
+        <input type="text" class="form-control" placeholder="Who is this invoice from? (required)">
+      </div>
+      <div class="form-group">
+        <label for="billTo">Bill To</label>
+        <input type="text" class="form-control" placeholder="Who is this invoice to? (required)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form action=""  class="" >
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="paymentTerms">Payment Terms</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="dueDate">Due Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="balanceDue">Balance Due</label>&nbsp;$ 0
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <app-line-items></app-line-items>
+  
+</div>
